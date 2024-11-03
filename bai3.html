@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let row = 5;
+    
+        //hinh1
+    
+        for (let i = 1; i <= row; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    
+        document.write("<br>");
+    
+        //hinh2
+    
+        for (let i = row; i >= 1; i--) {
+            for (let j = i; j >= 1; j--) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+    
+    
+        //hinh 3
+    
+        for (let i = 1; i <= row; i++) {
+            // Vòng lặp để in ra khoảng trắng ở đầu dòng
+            for (let j = 1; j <= row - i; j++) {
+                document.write("&nbsp;&nbsp;"); // Khoảng trắng để dịch dấu * sang phải
+            }
+    
+            // Vòng lặp để in ra dấu *
+            for (let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+    
+        //hinh4
+    
+        for (let i = row; i >= 1; i--) {
+            // Vòng lặp để in ra khoảng trắng ở đầu dòng
+            for (let j = row; j > i; j--) {
+                document.write("&nbsp;&nbsp;"); // Khoảng trắng để dịch dấu * sang phải
+            }
+    
+            // Vòng lặp để in ra dấu *
+            for (let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+    
+            document.write("<br>");
+        }
+    
+    
+    </script>
+    
+</body>
+</html>

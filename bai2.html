@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let num = +prompt("Nhập số muốn tính giai thừa");
+        let giaiThua = 1;
+    
+        if (num < 0) {
+            alert("Nhập lại giá trị là số dương");
+        } else {
+            for (let i = 1; i <= num; i++) {
+                giaiThua *= i;
+            }
+        }
+        console.log(giaiThua);
+    
+    </script>
+</body>
+</html>

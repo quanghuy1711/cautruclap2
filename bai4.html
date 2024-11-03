@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //in dòng đầu tiên
+        for (let j = 1; j <= 21; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    
+        //in ở giữa
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 21; j++) {
+                if (j === 1 || j === 21) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp;&nbsp;");
+                }
+    
+            }
+            document.write("<br>");
+        }
+    
+        //in dòng cuối cùng
+        for (let j = 1; j <= 21; j++) {
+            document.write("*");
+        }
+    
+    </script>
+</body>
+</html>
